@@ -23,3 +23,9 @@ async function getFileChangesInDirectory({ rootDir }: FileChange) {
 
   return diffs;
 }
+
+export const getFileChangesInDirectoryTool = tool({
+  description: 'Gets the code changes made in given directory',
+  inputSchema: fileChange,
+  execute: getFileChangesInDirectory,
+});

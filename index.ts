@@ -18,3 +18,7 @@ const codeReviewAgent = async (prompt: string) => {
     process.stdout.write(chunk);
   }
 };
+
+await codeReviewAgent(
+  "Review the code changes in './my-agent' directory, make your reviews and suggestions file by file"
+);
